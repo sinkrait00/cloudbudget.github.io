@@ -142,7 +142,140 @@ header
            top: 40%
            left: 30px
        
-          
+.features_section
+    background-color: #FAFAFA
 
+    width: 100%
+    height: 660px
+
+    
+    &__container
+        &__block
+            position: relative
+            & span
+                position: absolute
+                top: 60%
+                left: 0
+                right: 0
+                margin: 0 auto
+                padding: 40px 40px
+
+                width: 80%
+
+                background-color: #ffffff
+                box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
+
+                border-radius: 8px
+
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                text-align: center
+                & h3
+                    font-size: 18px
+                    line-height: 22px
+                    font-weight: bold
+                & a
+                    color: #ED4C5C
+                & h3, &p
+                    margin-bottom: 20px
+.title
+    text-align: center
+    font-weight: 600
+    font-size: 36px
+    margin: 60px 0
+
+
+.technology_section
+    height: 500px
+    
+   
+    &__block
+        position: relative
+
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        text-align: center
+
+        height: 225px
+
+        margin-top: 50px
+        & h3
+            font-weight: bold
+            font-size: 18px
+
+            margin: 20px 0
+
+        &__number
+            position: absolute
+            top: -50px
+        &__icon
+            position: absolute
+            top: 0
+            
+
+.video_section
+    background-color: #ED4C5C
+    position: relative
+    height: 500px      
+
+    &__container
+        min-height: 100%!important
+        display: flex
+        justify-content: center
+        &__info
+            & img
+                margin-right: 15px
+        &__info h3
+            
+            font-weight: 600
+            font-size: 36px
+            line-height: 43px
+            color: #ffffff
+            margin-bottom: 30px
+        &__info p
+            color: #ffffff
+            line-height: 140%
+
+
+            margin-bottom: 30px
+
+        &__info, &__videos
+            display: flex
+            flex-direction: column
+            justify-content: center
+            
            
-           
+
+        &__videos
+            position: relative
+            align-items: center
+            & img
+                position: absolute
+
+                border-radius: 15px
+
+                width: 445px
+                height: 310px
+
+                top: 50%
+                right: 0
+                left: 0
+                margin: 0 auto
+                transform: translateY(-50%)
+
+                z-index: 5
+
+.blured_img
+    &_1, &_2
+        opacity: .5
+        height: 270px!important
+        z-index: 0!important
+    &_1
+        left: 60px!important
+    &_2
+        right: 60px!important
