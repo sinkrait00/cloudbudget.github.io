@@ -90,12 +90,13 @@ header {
     text-align: justify; }
   .under_header_info__block2 {
     display: flex;
-    justify-content: center;
-    position: relative; }
-    .under_header_info__block2 a {
-      position: absolute;
-      top: 40%;
-      left: 30px; }
+    justify-content: center; }
+    .under_header_info__block2 span {
+      position: relative; }
+      .under_header_info__block2 span a {
+        position: absolute;
+        top: 40%;
+        left: -30px; }
 
 .features_section {
   background-color: #FAFAFA;
@@ -180,30 +181,30 @@ header {
       flex-direction: column;
       justify-content: center; }
     .video_section__container__videos {
-      position: relative;
       align-items: center; }
-      .video_section__container__videos img {
-        position: absolute;
-        border-radius: 15px;
+      .video_section__container__videos span {
+        position: relative;
         width: 445px;
-        height: 310px;
-        top: 50%;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        transform: translateY(-50%);
-        z-index: 5; }
+        height: 310px; }
+        .video_section__container__videos span img {
+          position: absolute;
+          border-radius: 15px; }
 
 .blured_img_1, .blured_img_2 {
   opacity: .5;
   height: 270px !important;
-  z-index: 0 !important; }
+  z-index: 0 !important;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .blured_img_1 {
-  left: 60px !important; }
+  left: -8%; }
 
 .blured_img_2 {
-  right: 60px !important; }
+  right: -8%; }
+
+.img_video_active {
+  z-index: 5; }
 
 .contact_section {
   height: 500px;
