@@ -30,18 +30,65 @@
     .features_section__container__block {
       display: flex;
       justify-content: space-around;
-      margin-bottom: 30%; }
-      .features_section__container__block span {
-        width: 35%; } }
+      margin-bottom: 40%; }
+  .video_section__container__info {
+    justify-content: center;
+    margin-bottom: 60px; }
+    .video_section__container__info h3 {
+      text-align: center; }
+    .video_section__container__info p {
+      text-align: justify; }
+    .video_section__container__info div {
+      align-self: center; }
+  .contact_section__container__block1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 30px 0; }
+    .contact_section__container__block1 p {
+      margin-top: 60px;
+      width: 70%;
+      text-align: center; }
+  .footer_block img {
+    align-self: flex-start; } }
 
-.video_section__container__info {
-  justify-content: center;
-  margin-bottom: 60px; }
-  .video_section__container__info h3 {
-    text-align: center; }
-  .video_section__container__info p {
-    text-align: justify; }
-  .video_section__container__info div {
-    align-self: center; }
+@media screen and (max-width: 768px) {
+  .header_navigation__logo, .header_navigation__menu {
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 568px) {
+  .header_navigation__menu {
+    flex-wrap: wrap; }
+    .header_navigation__menu a {
+      margin: 15px 15px; }
+  .header_info {
+    transform: translateY(-20%); }
+    .header_info h1 {
+      font-size: 40px; }
+    .header_info p {
+      font-size: 1.5em; }
+  .features_section__container__block {
+    margin-bottom: 80%; }
+  .under_header_info {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .video_section__container__videos span {
+    width: 280px;
+    height: 200px; }
+  .blured_img_1, .blured_img_2 {
+    height: 130px !important; } }
+
+@media screen and (max-height: 668px) {
+  .header_info {
+    transform: translateY(-20%); }
+    .header_info h1, .header_info p, .header_info a {
+      margin: 10px 0; }
+    .header_info h1 {
+      font-size: 35px;
+      line-height: normal;
+      font-weight: bolder; }
+    .header_info p {
+      font-size: 1.3em; } }
 
 /*# sourceMappingURL=response.css.map */

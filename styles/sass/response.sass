@@ -39,18 +39,83 @@
                 display: flex
                 justify-content: space-around
 
-                margin-bottom: 30%
+                margin-bottom: 40%
                 
 
-                & span
-                    width: 35%
                     
-.video_section__container__info
-    justify-content: center
-    margin-bottom: 60px
-    & h3
-        text-align: center
-    & p
-        text-align: justify
-    & div 
-        align-self: center
+    .video_section__container__info
+        justify-content: center
+        margin-bottom: 60px
+        & h3
+            text-align: center
+        & p
+            text-align: justify
+        & div 
+            align-self: center
+
+    .contact_section__container__block1
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0
+        margin: 0 0 30px 0
+
+        & p
+            margin-top: 60px
+            width: 70%
+            text-align: center
+
+    .footer_block img
+        align-self: flex-start
+
+@media screen and ( max-width: 768px  )
+    
+    .header_navigation
+        &__logo, &__menu
+            margin-bottom: 15px
+        
+
+@media screen and ( max-width: 568px  )
+    .header_navigation__menu
+        flex-wrap: wrap
+        
+        & a
+            margin: 15px 15px
+    .header_info 
+        transform: translateY(-20%)
+        & h1
+            font-size: 40px
+        & p
+            font-size: 1.5em   
+
+    .features_section
+        &__container
+            &__block
+                margin-bottom: 80%
+
+    .under_header_info
+        padding-left: 15px
+        padding-right: 15px 
+
+    .video_section__container__videos span
+        width: 280px
+        height: 200px
+
+    .blured_img
+        &_1, &_2
+            
+            height: 130px!important
+        
+
+@media screen and ( max-height: 668px )
+    .header_info
+        transform: translateY(-20%)
+        & h1, & p, & a
+            margin: 10px 0
+           
+        & h1
+            font-size: 35px
+            line-height: normal
+            font-weight: bolder
+        & p
+            font-size: 1.3em

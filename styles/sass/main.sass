@@ -9,6 +9,7 @@ body
     padding: 0
     margin: 0
 
+    overflow-x: hidden
 a 
     text-decoration: none
     color:#000
@@ -152,34 +153,36 @@ header
     &__container
         &__block
             position: relative
-            & span
-                position: absolute
-                top: 60%
-                left: 0
-                right: 0
-                margin: 0 auto
-                padding: 40px 40px
+            &__span
+                position: relative
+                & span
+                    position: absolute
+                    top: 60%
+                    left: 0
+                    right: 0
+                    margin: 0 auto
+                    padding: 40px 40px
 
-                width: 80%
+                    width: 80%
 
-                background-color: #ffffff
-                box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
+                    background-color: #ffffff
+                    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
 
-                border-radius: 8px
+                    border-radius: 8px
 
-                display: flex
-                flex-direction: column
-                align-items: center
+                    display: flex
+                    flex-direction: column
+                    align-items: center
 
-                text-align: center
-                & h3
-                    font-size: 18px
-                    line-height: 22px
-                    font-weight: bold
-                & a
-                    color: #ED4C5C
-                & h3, &p
-                    margin-bottom: 20px
+                    text-align: center
+                    & h3
+                        font-size: 18px
+                        line-height: 22px
+                        font-weight: bold
+                    & a
+                        color: #ED4C5C
+                    & h3, &p
+                        margin-bottom: 20px
 .title
     text-align: center
     font-weight: 600

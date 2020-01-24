@@ -7,6 +7,7 @@ let rename = require('gulp-rename');
 let sass = require('gulp-sass');
 let sourcemaps = require('gulp-sourcemaps');
 let watch = require('gulp-watch');
+let livereload = require('gulp-livereload')
 
 gulp.task('sass-compile',function(){
     return gulp.src('styles/sass/*.sass')
@@ -17,6 +18,7 @@ gulp.task('sass-compile',function(){
     });
 
     gulp.task('watch',function(){
+      
     gulp.watch('styles/sass/*.sass',gulp.series('sass-compile','con-min'));
     });
 
@@ -25,7 +27,8 @@ gulp.task('con-min', function () {
     .pipe(concatCss("styles/all.css"))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename('all.min.css'))
-    .pipe(gulp.dest('importCss/'));
+    .pipe(gulp.dest('importCss/'))
+    .pipe(livereload({start: true}));
 });
 
 
