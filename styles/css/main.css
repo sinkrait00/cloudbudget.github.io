@@ -11,6 +11,12 @@ a {
   text-decoration: none;
   color: #000; }
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden; }
+
 header {
   background: url(./img/Bg.png) no-repeat;
   background-size: cover;
