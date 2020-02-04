@@ -13,7 +13,9 @@ body
 a 
     text-decoration: none
     color:#000
-
+.rus
+    display: none
+    
 .wrapper
     position: relative
     width: 100%
@@ -70,14 +72,48 @@ header
         padding: 10px 30px
 
     &__signupBlock
+        
         display: flex
         justify-content: flex-end
         align-items: center
-
-    &__signupBlock a
+    
+    &__language
+        position: relative
         
+        display: flex
+        align-items: center
+        margin-right: 10px
+
+        cursor: pointer
+        & span
+            color: #ffffff
+            align-items: center
+            
+            & img
+                width: 32px
+                height: 32px
+                
+.header-navigation__drop-language-menu
+    position: absolute
+    background: #dddddd
+    display: block
+    padding: 10px
+
+    border-radius: 10px
+
+    width: 90px
+    top: 40px
+    left: -10px
+
+    display: none
+    z-index: 999
+    cursor: pointer
+    & a
+        color: #000000
         & img
-            margin-right: 10px
+            width: 32px
+            height: 32px
+            margin-right: 5px
 
 .header-info
     color:#ffff

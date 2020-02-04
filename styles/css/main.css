@@ -11,6 +11,9 @@ a {
   text-decoration: none;
   color: #000; }
 
+.rus {
+  display: none; }
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -49,8 +52,37 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-  .header-navigation__signupBlock a img {
-    margin-right: 10px; }
+  .header-navigation__language {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer; }
+    .header-navigation__language span {
+      color: #ffffff;
+      align-items: center; }
+      .header-navigation__language span img {
+        width: 32px;
+        height: 32px; }
+
+.header-navigation__drop-language-menu {
+  position: absolute;
+  background: #dddddd;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90px;
+  top: 40px;
+  left: -10px;
+  display: none;
+  z-index: 999;
+  cursor: pointer; }
+  .header-navigation__drop-language-menu a {
+    color: #000000; }
+    .header-navigation__drop-language-menu a img {
+      width: 32px;
+      height: 32px;
+      margin-right: 5px; }
 
 .header-info {
   color: #ffff;
