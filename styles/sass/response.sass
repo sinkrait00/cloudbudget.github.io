@@ -1,9 +1,9 @@
 @media screen and ( max-width:992px)
     .under_header_info,
-    .features_section,
-    .technology_section,
-    .video_section,
-    .contact_section,
+    .features-section,
+    .technology-section,
+    .video-section,
+    .contact-section,
     footer
         height: auto
         padding: 100px 0 
@@ -25,24 +25,22 @@
         & a 
             align-self: center
 
-    .features_section h2,
-    .technology_section h2 
+    .features-section h2,
+    .technology-section h2 
         margin-bottom: 60px  
     
-    .features_section
+    .features-section
         padding-bottom: 50px
 
-        &__container
+        &__block
+            display: flex
+            justify-content: space-around
 
-            &__block
-                display: flex
-                justify-content: space-around
-
-                margin-bottom: 40%
+            margin-bottom: 40%
                 
 
                     
-    .video_section__container__info
+    .video-section__info
         justify-content: center
         margin-bottom: 60px
         & h3
@@ -52,7 +50,7 @@
         & div 
             align-self: center
 
-    .contact_section__container__block1
+    .contact-section__block1
         display: flex
         flex-direction: column
         align-items: center
@@ -68,20 +66,20 @@
         align-self: flex-start
 
 @media screen and ( max-width: 768px  )
-    .header_info
+    .header-info
         width: 70%
-    .header_navigation
+    .header-navigation
         &__logo, &__menu
             margin-bottom: 15px
         
 
 @media screen and ( max-width: 568px  )
-    .header_navigation__menu
+    .header-navigation__menu
         flex-wrap: wrap
         
         & a
             margin: 15px 15px
-    .header_info 
+    .header-info 
         width: 90%
         margin-top: 60px
         & h1
@@ -89,16 +87,16 @@
         & p
             font-size: 1.1em   
 
-    .features_section
-        &__container
-            &__block
-                margin-bottom: 80%
+    .features-section
+ 
+        &__block
+            margin-bottom: 80%
 
     .under_header_info
         padding-left: 15px
         padding-right: 15px 
 
-    .video_section__container__videos span
+    .video-section__videos span
         width: 280px
         height: 200px
 
@@ -109,7 +107,7 @@
         
 
 @media screen and ( max-height: 668px )
-    .header_info
+    .header-info
         height: 100%!important
         transform: translateY(-20%)
         & h1, & p, & a
